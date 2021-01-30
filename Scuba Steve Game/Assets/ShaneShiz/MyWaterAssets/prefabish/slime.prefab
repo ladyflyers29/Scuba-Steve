@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2785400354403103464}
   - component: {fileID: 1227337860852399437}
   - component: {fileID: 3957703107708602759}
+  - component: {fileID: 6046568344676411433}
   m_Layer: 0
   m_Name: slime
   m_TagString: Untagged
@@ -81,3 +82,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6046568344676411433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3309136863058585682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.027539039, y: 0.028067246, z: 0.01922097}
+  m_Center: {x: 0.00016233436, y: -0.00005570046, z: -0.00064893655}

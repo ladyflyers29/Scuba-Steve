@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 373566730192408571}
   - component: {fileID: 5447342845295772000}
   - component: {fileID: 1377729635621498292}
+  - component: {fileID: 5552465431231975890}
+  - component: {fileID: 4797056660619225584}
+  - component: {fileID: 8115962054356642252}
+  - component: {fileID: 5765127645994207923}
   m_Layer: 0
   m_Name: rockFInal_LOD0_lambert2_0
   m_TagString: Untagged
@@ -81,6 +85,59 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5552465431231975890
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5020932558552913850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 262.8216, y: 295.70593, z: 228.42249}
+  m_Center: {x: 33.709766, y: 146.26741, z: -15.190539}
+--- !u!65 &4797056660619225584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5020932558552913850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 190.92769, y: 84.76736, z: 330.1502}
+  m_Center: {x: 28.072296, y: 40.79814, z: -26.87043}
+--- !u!65 &8115962054356642252
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5020932558552913850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 113.76242, y: 175.59596, z: 330.1502}
+  m_Center: {x: -119.190956, y: 86.21242, z: -26.87043}
+--- !u!64 &5765127645994207923
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5020932558552913850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5806535343074150150, guid: e4cb6cb14e359394ca662d5c23b9fd3e, type: 3}
 --- !u!1 &7367712508841226730
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +181,8 @@ GameObject:
   - component: {fileID: 7709659726252665144}
   - component: {fileID: 7709659726252665146}
   - component: {fileID: 7709659726252665145}
+  - component: {fileID: 8263137918912545572}
+  - component: {fileID: 2767596144002041974}
   m_Layer: 0
   m_Name: rockFInal_LOD0_lambert2_0 (1)
   m_TagString: Untagged
@@ -194,3 +253,30 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8263137918912545572
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7709659726252665143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 382.71564, y: 295.70602, z: 170.62125}
+  m_Center: {x: 1.7728676, y: 146.26735, z: -36.937458}
+--- !u!64 &2767596144002041974
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7709659726252665143}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5806535343074150150, guid: e4cb6cb14e359394ca662d5c23b9fd3e, type: 3}

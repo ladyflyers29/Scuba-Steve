@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5090106185644552862}
   - component: {fileID: 8146003534925774139}
   - component: {fileID: 6262427114176465393}
+  - component: {fileID: 7534995769726815391}
   m_Layer: 0
   m_Name: glowbulb
   m_TagString: Untagged
@@ -82,3 +83,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7534995769726815391
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613842728663967780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19197267, y: 0.21240458, z: 1.2765377}
+  m_Center: {x: -0.008833917, y: 0.07061124, z: -0.34568775}
