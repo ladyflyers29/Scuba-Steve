@@ -12,7 +12,7 @@ public class WaterTrigger : MonoBehaviour
             Debug.Log("Enter");
             Swim swim = gameObject.GetComponent<Swim>();
             swim.inWater = true;
-            swim.playerBody.transform.rotation = Quaternion.Euler(new Vector3(90, 0, 0));
+//            swim.playerBody.transform.rotation = Quaternion.Euler(new Vector3(90, 0, 0));
         }
         else
         {
@@ -23,8 +23,11 @@ public class WaterTrigger : MonoBehaviour
     {
         Debug.Log("Exit");
         Swim swim = gameObject.GetComponent<Swim>();
+//        EasyMove land = gameObject.GetComponent<EasyMove>();
+//        land.transform.rotation = Quaternion.Euler(new Vector3(Camera.main.transform.rotation.x, Camera.main.transform.rotation.y, Camera.main.transform.rotation.z));
         swim.inWater = false;
         swim.playerBody.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+        swim.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
     }
 
 }
