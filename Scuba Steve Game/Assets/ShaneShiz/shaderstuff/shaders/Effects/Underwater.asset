@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Underwater
   m_EditorClassIdentifier: 
   normalMap: {fileID: 2800000, guid: 2de494aec6f5ceb438b9bbc4a72a847f, type: 3}
-  strength: 0.0005
+  strength: 0.0007
   waterColour: {r: 1, g: 1, b: 1, a: 0}
   fogStrength: 0
