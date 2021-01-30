@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468ec812f117477419c1d593b914651a, type: 3}
   m_Name: Painting
   m_EditorClassIdentifier: 
-  kernelSize: 20
+  kernelSize: 4

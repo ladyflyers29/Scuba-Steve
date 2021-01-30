@@ -168,7 +168,7 @@ MonoBehaviour:
     value: 3
   toneCurveToeStrength:
     overrideState: 1
-    value: 0.454
+    value: 0.436
   toneCurveToeLength:
     overrideState: 1
     value: 0.307
@@ -211,7 +211,7 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 1.28
+    value: 1.9
   contrast:
     overrideState: 1
     value: 0

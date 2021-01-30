@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\ShaneShiz\shaderstuff\shaders\Resources\Shaders\Anaglyph3DPro.shader" />
+     <None Include="Assets\ShaneShiz\MyWaterAssets\agua\Assets\OceanWater.shader" />
      <None Include="Assets\ShaneShiz\shaderstuff\shaders\Resources\Shaders\Greyscale.shader" />
      <None Include="Assets\ShaneShiz\shaderstuff\shaders\Resources\Shaders\ChromaticAberration.shader" />
      <None Include="Assets\ShaneShiz\shaderstuff\shaders\Resources\Shaders\Mosaic.shader" />
@@ -95,6 +96,7 @@
      <None Include="Assets\ShaneShiz\shaderstuff\shaders\Resources\Shaders\Underwater.shader" />
      <None Include="Assets\ShaneShiz\shaderstuff\shaders\Resources\Shaders\Outline.shader" />
      <None Include="Assets\ShaneShiz\shaderstuff\shaders\Resources\Shaders\Kaleidoscope.shader" />
+     <None Include="Assets\ShaneShiz\MyWaterAssets\agua\clouds\Shaders\2DClouds.shader" />
      <None Include="Assets\ShaneShiz\shaderstuff\shaders\Resources\Shaders\Interference.shader" />
      <None Include="Assets\ShaneShiz\shaderstuff\shaders\Resources\Shaders\Dither.shader" />
     <Reference Include="UnityEngine">
@@ -646,8 +648,14 @@
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
@@ -657,12 +665,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
