@@ -14,20 +14,28 @@ public class WaterTrigger : MonoBehaviour
             swim.inWater = true;
 //            swim.playerBody.transform.rotation = Quaternion.Euler(new Vector3(90, 0, 0));
         }
-        else
+        else if (Col.tag =="NPC Shop")
         {
-            return;
+            //Jack type code here
         }
     }
     private void OnTriggerExit(Collider Col)
     {
-        Debug.Log("Exit");
-        Swim swim = gameObject.GetComponent<Swim>();
-//        EasyMove land = gameObject.GetComponent<EasyMove>();
-//        land.transform.rotation = Quaternion.Euler(new Vector3(Camera.main.transform.rotation.x, Camera.main.transform.rotation.y, Camera.main.transform.rotation.z));
-        swim.inWater = false;
-        swim.playerBody.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-        swim.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+        if (Col.tag == "Water")
+        {
+            Debug.Log("Exit");
+            Swim swim = gameObject.GetComponent<Swim>();
+            //        EasyMove land = gameObject.GetComponent<EasyMove>();
+            //        land.transform.rotation = Quaternion.Euler(new Vector3(Camera.main.transform.rotation.x, Camera.main.transform.rotation.y, Camera.main.transform.rotation.z));
+            swim.inWater = false;
+            swim.playerBody.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            swim.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+        }
+        else if (Col.tag == "NPC Shop")
+        {
+            //Jack type code here
+        }
+
     }
 
 }
