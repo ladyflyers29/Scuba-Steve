@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class WaterTrigger : MonoBehaviour
 {
+    public GameObject pressE;
+    public GameObject mainCamera;
+    public GameObject shopCamera;
+
     private void OnTriggerEnter(Collider Col)
     {
         if (Col.tag == "Water")
@@ -12,13 +16,34 @@ public class WaterTrigger : MonoBehaviour
             Debug.Log("Enter");
             Swim swim = gameObject.GetComponent<Swim>();
             swim.inWater = true;
-//            swim.playerBody.transform.rotation = Quaternion.Euler(new Vector3(90, 0, 0));
+            //            swim.playerBody.transform.rotation = Quaternion.Euler(new Vector3(90, 0, 0));
         }
-        else if (Col.tag =="NPC Shop")
+
+        if (Col.tag == "NPC Shop")
         {
-            //Jack type code here
+            Debug.Log("In the shop");
+            pressE.SetActive(true);
+            gameObject.GetComponent<EasyMove>().inStore = true;
         }
     }
+
+    //private void OnTriggerStay(Collider Col)
+    //{
+    //    if (Col.tag == "NPC Shop")
+    //    {
+    //        Debug.Log("In the shop");
+    //        pressE.SetActive(true);
+    //        if (Input.GetKeyDown(KeyCode.E))
+    //        {
+    //            Debug.Log("EEEE");
+    //            mainCamera.SetActive(false);
+    //            shopCamera.SetActive(true);
+    //        }
+    //    }
+        
+    //}
+
+
     private void OnTriggerExit(Collider Col)
     {
         if (Col.tag == "Water")
@@ -33,9 +58,12 @@ public class WaterTrigger : MonoBehaviour
         }
         else if (Col.tag == "NPC Shop")
         {
-            //Jack type code here
+            Debug.Log("out OF shop");//Jack type code here
+            pressE.SetActive(false);
+            gameObject.GetComponent<EasyMove>().inStore = false;
         }
 
     }
+
 
 }

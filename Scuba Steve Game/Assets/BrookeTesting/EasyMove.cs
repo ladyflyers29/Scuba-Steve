@@ -12,6 +12,10 @@ public class EasyMove : MonoBehaviour
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
 
+    public GameObject mainCamera;
+    public GameObject shopCamera;
+    public bool inStore = false;
+
     CharacterController characterController;
     Swim swim;
     Vector3 moveDirection = Vector3.zero;
@@ -32,6 +36,13 @@ public class EasyMove : MonoBehaviour
 
     void Update()
     {
+        if (inStore && Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("EEEE");
+            mainCamera.SetActive(false);
+            shopCamera.SetActive(true);
+        }
+
         if (!swim.inWater)
         {
             // We are grounded, so recalculate move direction based on axes
