@@ -23,12 +23,12 @@ public class Swim : MonoBehaviour
     {
         if (inWater)
         {
-            gameObject.GetComponent<EasyMove>().canMove = false;
+           // gameObject.GetComponent<EasyMove>().canMove = false;
             SwimmingTime();
         }
         else
         {
-            gameObject.GetComponent<EasyMove>().canMove = true;
+            //gameObject.GetComponent<EasyMove>().canMove = true;
         }
         Camera.main.transform.LookAt(playerBody.transform);
 
