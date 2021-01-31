@@ -12,6 +12,9 @@ public class EasyMove : MonoBehaviour
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
 
+    //pause menu
+    public bool isPaused = false;
+
     CharacterController characterController;
     Swim swim;
     Vector3 moveDirection = Vector3.zero;
@@ -32,7 +35,13 @@ public class EasyMove : MonoBehaviour
 
     void Update()
     {
-        if (!swim.inWater)
+        if (Time.timeScale == 0f)
+        {
+            isPaused = true;
+        }
+        else { isPaused = false; }
+
+        if (!swim.inWater && !isPaused)
         {
             // We are grounded, so recalculate move direction based on axes
             Vector3 forward = transform.TransformDirection(Vector3.forward);
