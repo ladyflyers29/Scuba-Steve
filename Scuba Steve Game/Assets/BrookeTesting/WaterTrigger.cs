@@ -23,7 +23,7 @@ public class WaterTrigger : MonoBehaviour
         {
             Debug.Log("In the shop");
             pressE.SetActive(true);
-            gameObject.GetComponent<EasyMove>().inStore = true;
+            //gameObject.GetComponent<EasyMove>().inStore = true;
         }
     }
 
@@ -60,7 +60,7 @@ public class WaterTrigger : MonoBehaviour
         {
             Debug.Log("out OF shop");//Jack type code here
             pressE.SetActive(false);
-            gameObject.GetComponent<EasyMove>().inStore = false;
+          //  gameObject.GetComponent<EasyMove>().inStore = false;
         }
 
     }

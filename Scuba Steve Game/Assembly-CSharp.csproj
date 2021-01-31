@@ -57,7 +57,9 @@
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\PaintingEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\ImageEffect.cs" />
     <Compile Include="Assets\ShaneShiz\ShaneScripts\SummonScaner.cs" />
+    <Compile Include="Assets\Scenes\EasyMove.cs" />
     <Compile Include="Assets\BrookeTesting\Swim.cs" />
+    <Compile Include="Assets\ShaneShiz\ShaneScripts\PlayerAnimationsGrounded.cs" />
     <Compile Include="Assets\ShaneShiz\CursorScript.cs" />
     <Compile Include="Assets\ShaneShiz\MyWaterAssets\Models\fishies\Blends\fishmovement.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\KaleidoscopeEffect.cs" />
@@ -66,10 +68,12 @@
     <Compile Include="Assets\ShaneShiz\ShaneScripts\PlayerAnimation.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\CompositeEffect.cs" />
     <Compile Include="Assets\ShaneShiz\ShaneScripts\Projectile.cs" />
+    <Compile Include="Assets\ShopKeepAnimations.cs" />
     <Compile Include="Assets\ShaneShiz\ShaneScripts\Detector.cs" />
     <Compile Include="Assets\3rdPerson+Fly\Scripts\LevelScripts\ThirdPersonOrbitCamBasic.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\AnaglyphProEffect.cs" />
     <Compile Include="Assets\3rdPerson+Fly\Scripts\LevelScripts\ControlsTutorial.cs" />
+    <Compile Include="Assets\3rdPerson+Fly\Scripts\SceneChanger.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\DrawingEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\FisheyeEffect.cs" />
     <Compile Include="Assets\Scenes\MainMenu\ChangeScene.cs" />
@@ -84,19 +88,19 @@
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\CinematicEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\ChromaticAberrationEffect.cs" />
     <Compile Include="Assets\ShaneShiz\ShaneScripts\Sonar.cs" />
-    <Compile Include="Assets\BrookeTesting\EasyMove.cs" />
     <Compile Include="Assets\ShaneShiz\ShaneScripts\Oxygen.cs" />
+    <Compile Include="Assets\ShaneShiz\AnimalNoises.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\camerashiz.cs" />
     <Compile Include="Assets\ShaneShiz\ShaneScripts\DestroyOverTime.cs" />
     <Compile Include="Assets\3rdPerson+Fly\Scripts\LevelScripts\HintManagement.cs" />
     <Compile Include="Assets\3rdPerson+Fly\Scripts\PlayerScripts\AimBehaviourBasic.cs" />
     <Compile Include="Assets\BrookeTesting\RandomSpawn.cs" />
+    <Compile Include="Assets\3rdPerson+Fly\Scripts\ShopCamera.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\DisintegrateEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\MosaicEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\InterferenceEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\BaseEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\AnaglyphEffect.cs" />
-    <Compile Include="Assets\ShaneShiz\ShaneScripts\PlayerAnimationsGrounded.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
