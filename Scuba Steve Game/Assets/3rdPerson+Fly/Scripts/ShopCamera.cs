@@ -19,12 +19,15 @@ public class ShopCamera : MonoBehaviour
             {
                 maincam.SetActive(false);
                 shopcam.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
             }
 
             else if (shopcam.activeSelf == true)
             {
                 maincam.SetActive(true);
                 shopcam.SetActive(false);
+                
+                Cursor.lockState = CursorLockMode.Locked;
             }
         }
     }

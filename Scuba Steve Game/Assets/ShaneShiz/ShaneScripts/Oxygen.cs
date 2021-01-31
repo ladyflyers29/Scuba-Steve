@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Oxygen : MonoBehaviour
 {
     public string SceneName;
-    public float MaxOxygen = 200;
+    public float MaxOxygen = 100;
     public Text scoreText;
     void Start()
     {

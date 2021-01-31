@@ -10,8 +10,12 @@ public class Detector : MonoBehaviour
 
     public AudioSource sound;
 
+    GameObject Items;
+
     void Start()
     {
+        Items = GameObject.Find("Item Parent");
+        maxSize = Items.GetComponent<haveItemGetMoney>().CurrentSonarLevel;
         StartCoroutine(Scale());
     }
 
