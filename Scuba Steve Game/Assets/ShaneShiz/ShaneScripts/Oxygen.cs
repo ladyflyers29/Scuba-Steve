@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Oxygen : MonoBehaviour
 {
-    
+    public string SceneName;
     public float MaxOxygen = 200;
     public Text scoreText;
     void Start()
@@ -21,6 +22,7 @@ public class Oxygen : MonoBehaviour
         MaxOxygen -= Time.deltaTime;
         if (MaxOxygen < 0)
         {
+            SceneManager.LoadScene(SceneName); // loads scene When player enter the trigger collider
             //GameOver();
         }
         scoreText.text = MaxOxygen.ToString("F0");
