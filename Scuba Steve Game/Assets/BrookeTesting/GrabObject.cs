@@ -5,6 +5,8 @@ using UnityEngine;
 public class GrabObject : MonoBehaviour
 {
     public GameObject Items;
+
+    public AudioSource Coin;
     
 
     private void OnTriggerEnter(Collider Col)
@@ -16,6 +18,7 @@ public class GrabObject : MonoBehaviour
             Col.gameObject.SetActive(false);
             Debug.Log("Grabbed");
             Items.GetComponent<haveItemGetMoney>().haveItem = true;
+            Coin.Play();
          
         }
     }
