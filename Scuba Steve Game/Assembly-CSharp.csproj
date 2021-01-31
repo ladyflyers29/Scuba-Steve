@@ -101,6 +101,8 @@
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\InterferenceEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\BaseEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\AnaglyphEffect.cs" />
+    <Compile Include="Assets\BrookeTesting\haveItemGetMoney.cs" />
+    <Compile Include="Assets\3rdPerson+Fly\Scripts\Additive.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />

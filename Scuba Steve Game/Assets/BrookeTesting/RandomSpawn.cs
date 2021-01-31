@@ -6,7 +6,7 @@ public class RandomSpawn : MonoBehaviour
 {
     public int oxygenLevel;
     public GameObject[] spawnLocations;
-    public bool itemSpawned;
+    public bool itemSpawned = false;
 
     public GameObject getItemText;
     public GameObject stillNoItemText;
@@ -25,11 +25,11 @@ public class RandomSpawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && itemSpawned == false && Input.GetKeyDown(KeyCode.E)) //can change to F if needed
+        if (other.tag == "Player" && itemSpawned == false) 
         {
-            RandomSpawnLocation();
-            itemSpawned = true;
             SetActive(getItemText);
+            itemSpawned = true;
+            RandomSpawnLocation();
         }
 
         else if (itemSpawned == true)
@@ -49,22 +49,13 @@ public class RandomSpawn : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Player" && itemSpawned == false && Input.GetKeyDown(KeyCode.E)) //can change to F if needed
-        {
-            RandomSpawnLocation();
-            itemSpawned = true;
-            SetActive(getItemText);
-        }
-    }
-
 
     private void OnTriggerExit(Collider other)
     {
-            SetNotActive(stillNoItemText);
-            SetNotActive(foundItemText);
-            SetNotActive(getItemText);
+
+        SetNotActive(stillNoItemText);
+        SetNotActive(foundItemText);
+        SetNotActive(getItemText);
     }
 
 
@@ -75,6 +66,7 @@ public class RandomSpawn : MonoBehaviour
         int locationNumber = Random.Range(0, (oxygenLevel - 1));
         Debug.Log(locationNumber);
         spawnLocations[locationNumber].gameObject.SetActive(true);
+
     }
 
     public void SetActive(GameObject go)
