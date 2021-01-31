@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class GrabObject : MonoBehaviour
 {
-    public bool haveItem;
+    public GameObject Items;
+    
 
     private void OnTriggerEnter(Collider Col)
     {
         if (Col.tag == "Item")
         {
+            Items = GameObject.Find("Item Parent");
             Debug.Log("You got me");
             Col.gameObject.SetActive(false);
             Debug.Log("Grabbed");
-            haveItem = true;
+            Items.GetComponent<haveItemGetMoney>().haveItem = true;
          
         }
     }
