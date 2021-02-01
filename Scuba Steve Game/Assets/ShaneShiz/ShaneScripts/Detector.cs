@@ -15,7 +15,7 @@ public class Detector : MonoBehaviour
     void Start()
     {
         Items = GameObject.Find("Item Parent");
-        maxSize = Items.GetComponent<haveItemGetMoney>().CurrentSonarLevel;
+       // maxSize = Items.GetComponent<haveItemGetMoney>().CurrentSonarLevel;
         StartCoroutine(Scale());
     }
 

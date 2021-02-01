@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -52,7 +52,9 @@
     <UnityVersion>2020.1.2f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\BrookeTesting\WaterTrigger.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\3rdPerson+Fly\Scripts\PlayerScripts\MoveBehaviour.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\PaintingEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\ImageEffect.cs" />
@@ -65,6 +67,7 @@
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\KaleidoscopeEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\VignetteEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\ScanlinesEffect.cs" />
+    <Compile Include="Assets\BrookeTesting\haveItemGetMoney.cs" />
     <Compile Include="Assets\ShaneShiz\ShaneScripts\PlayerAnimation.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\CompositeEffect.cs" />
     <Compile Include="Assets\ShaneShiz\ShaneScripts\Projectile.cs" />
@@ -81,8 +84,10 @@
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\OutlineEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\DitherEffect.cs" />
     <Compile Include="Assets\3rdPerson+Fly\Scripts\PlayerScripts\BasicBehaviour.cs" />
+    <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\SepiaEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\UnderwaterEffect.cs" />
+    <Compile Include="Assets\3rdPerson+Fly\Scripts\Additive.cs" />
     <Compile Include="Assets\BrookeTesting\GrabObject.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\GreyscaleEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\CinematicEffect.cs" />
@@ -101,8 +106,7 @@
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\InterferenceEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\BaseEffect.cs" />
     <Compile Include="Assets\ShaneShiz\shaderstuff\shaders\Image Effects\AnaglyphEffect.cs" />
-    <Compile Include="Assets\BrookeTesting\haveItemGetMoney.cs" />
-    <Compile Include="Assets\3rdPerson+Fly\Scripts\Additive.cs" />
+    <Compile Include="Assets\BrookeTesting\shopButtons.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
@@ -675,14 +679,8 @@
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
@@ -692,6 +690,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
